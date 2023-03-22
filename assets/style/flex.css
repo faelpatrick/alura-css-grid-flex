@@ -16,6 +16,12 @@
 .menu__pesquisar {
 }
 
+.categorias__lista {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
 @media screen and (min-width: 720px) {
   .menu {
     column-gap: 75px;
