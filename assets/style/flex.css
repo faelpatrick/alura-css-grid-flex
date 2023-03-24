@@ -22,6 +22,51 @@
   row-gap: 0.5rem;
 }
 
+.destaques {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.destaques__barra {
+  flex-grow: 1;
+}
+
+.eventos__lista {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.5em;
+  row-gap: 1rem;
+  justify-content: center;
+}
+.eventos__item {
+  flex-grow: 1;
+  max-width: 400px;
+}
+
+.agenda__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.agenda__informacoes {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 8em;
+}
+
+.rodape{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rodape__logo{
+  align-self: end;
+}
+
 @media screen and (min-width: 720px) {
   .menu {
     column-gap: 75px;
@@ -34,6 +79,23 @@
     flex-wrap: wrap;
     column-gap: 1.5rem;
     row-gap: 1rem;
+  }
+
+  .eventos__lista {
+    justify-content: end;
+  }
+
+  .agenda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: end;
+  }
+
+  .banner{
+    grid-template-columns: calc(50% - 0.75rem) auto auto;
+    column-gap: 1.5rem;
   }
   
 }
